@@ -12,6 +12,7 @@ body {
 }
 
 .header img {
+
     margin: 0 auto;
     z-index: 1;
     display: block;
@@ -20,7 +21,6 @@ body {
     justify-content: center;
     width: 1487px;
     height: 200px;
-    max-width: 100%;
 }
 
 .menu {
@@ -91,7 +91,7 @@ body {
 .container {
     width: 75%;
     margin: 0 auto;
-    margin-left: 22%;
+    margin-left: 22vw;
 }
 
 .recipes {
@@ -132,7 +132,7 @@ body {
     width: 900px;
     min-height: 600px;
     margin: 0 auto;
-    margin-left: 30%;
+    margin-left: 22vw;
     margin-bottom: 15px;
     text-align: center;
     background-color: #f1f1f1;
