@@ -5,7 +5,6 @@ body {
 }
 
 /*flex-box*/
-
 .container-geral {
     display: flex; /*inicia o flexbox*/
     flex-direction: column; /*colocar os itens do box em linha*/
@@ -27,12 +26,12 @@ body {
 
 }
 
+
 .container-principal {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
-
 
 .container-receitas {
     display: flex;
@@ -42,7 +41,6 @@ body {
     justify-content: space-evenly;
     align-items: center;
     margin-right: 20px;
-
 }
 
 .receita-card {
@@ -92,35 +90,150 @@ body {
     align-content:flex-start;
     order:0;
     max-width: 450px;
-
 }
 
 .container-menu-lista{
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     order:1;
     margin-left: 20px;
 }
 
-.container-menu-lista ul {
+.back{
+    display: flex;
+}
+
+.categoria{
+    display:flex;
+    margin: 0;
+}
+
+.categoria ul {
     list-style: none;
     padding: 0;
 }
 
-.container-menu-lista li {
+.categoria li {
     margin-bottom: 10px;
 }
 
-.container-menu-lista a {
+.categoria a {
     text-decoration: none;
-    color: #333;
+    color: #333333;
     font-weight: bold;
     font-size: 18px;
 }
 
+.container-menu-lista:hover {
+    transform: scale(1.05);
+}
+
+/*PAGINAS RECEITA*/
+.container-ingredientes {
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    align-items: stretch;
+    margin-right: 20px;
+}
+
+.receita{
+    display:flex;
+    flex-direction: row;
+}
+
+.Receita-ingredientes h1{
+    font-size: 45px;
+    color: #FE5473;
+}
+    
+.container-receitaimg{
+    display:flex;
+    flex-direction: column;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.container-ingredientes h3 {
+    color: #FE5473;
+}
+
+.Receita-ingredientes {
+    border-radius: 10px; 
+    margin-left: 20px;
+    margin-right: 20px; 
+    text-align: justify; 
+}
+
+.receita-ingredientes ul {
+    text-align: justify;
+}
+
+/*BOTÃO VOLTAR*/
+
+.botao{
+    display: flex;
+    margin-top: 20px;
+    align-self: center; /*alinha IMAGEM*/
+}
+
+.botao img{
+    border-radius: 10px;
+    height: 38px;
+    width: 99px;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+}
+
+/* pagina categoria*/
 
 
+.lista-receitas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*joga os itens para baixo*/
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 20px;
+}
 
+
+.lista-receita-card {
+    flex: 1 0 15%;
+    flex-shrink: 0; /* Impede que os itens encolham */
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px #ccc;
+    border-radius: 10px;
+    padding: 5px; /*espaço entre o card e a imagem*/
+    background: linear-gradient(transparent 35%, #191919 100%);
+}
+
+.lista-receita-card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.lista-receita-card:hover {
+    transform: scale(1.05);
+}
+
+.lista-receita-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
 
 /*
 .see-more {
@@ -152,73 +265,9 @@ body {
 .see-more:hover {
     transform: scale(1.05);
 }
-.container {
-    width: 75%;
-    margin: 0 auto;
-    margin-left: 22vw;
-}
 
 
 
-.container2 {
-    width: 900px;
-    min-height: 600px;
-    margin: 0 auto;
-    margin-left: 22vw;
-    margin-bottom: 15px;
-    text-align: center;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-}
-
-
-.container2 h1 {
-    margin-top: 10px;
-    font-size: 45px;
-    color: #FE5473;
-}
-
-.container2 h3 {
-    color: #FE5473;
-}
-
-.receita {
-    border: 1px solid #ccc; 
-    border-radius: 10px; 
-    padding: 20px; 
-    display: inline-block; /* Mantém o tamanho conforme o conteúdo 
-}
-
-.container2 img{
-    float: left;
-    border-radius: 10px;
-    height: 250px;
-    margin-left:40px;
-}
-
-.botao{
-    float: left; 
-    margin-left:40px;
-    margin-top: 170px;
-
-}
-.botao img{
-    border-radius: 10px;
-    height: 38px;
-    width: 99px;
-    margin-left: 0;
-}
-
-.botao:hover {
-    transform: scale(1.05);
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: justify;
-}
 
 /*
 
