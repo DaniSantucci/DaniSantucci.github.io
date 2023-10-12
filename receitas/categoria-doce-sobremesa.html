@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Receitas</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-receitas.css">
 </head>
 
 <body>
@@ -24,8 +24,9 @@
                             <img src="img/chef.png">
                             <div class="categoria">
                                 <ul>
-                                    <li><a href="#" data-categoria="doce">Doces e Sobremesas</a></li>
-                                    <li><a href="#" data-categoria="Salgado">Salgado</a></li>
+                                    <li><a href="categoria-doce-sobremesa.html" data-categoria="doce">Doces e
+                                            Sobremesas</a></li>
+                                    <li><a href="categoria-salgado.html" data-categoria="Salgado">Salgado</a></li>
                                     <li><a href="#" data-categoria="Saudável">Saudável</a></li>
                                     <li><a href="#" data-categoria="Acompanhamento">Acompanhamento</a></li>
                                     <li><a href="#" data-categoria="prato-principal">Prato Principal</a></li>
@@ -37,46 +38,79 @@
                 </div>
             </div>
 
-            <div class="container-ingredientes">
-                <div class="receita">
-                    <div class="container-receitaimg">
-                        <img src="img/pao.png" alt="Pao">
-                        <div class="botao">
-                            <button onclick="voltar()">
-                                <img src="img/back.png" alt="Voltar">
-                            </button>
-                        </div>
+            <div class="lista-receitas">
+                <div class="lista-receita-card">
+                    <a href="panqueca.html" title="Panqueca"></a>
+                    <img src="img/panqueca.png" alt="Panqueca">
+                    <h3>Panqueca</h3>
+                </div>
 
-                        <script>
-                            function voltar() {
-                                window.history.back();
-                            }
-                        </script>
-                    </div>
 
-                    <div class="Receita-ingredientes">
-                        <h1>Pão</h1>
-                        <h3>Ingredientes</h3>
-                        <ul>
-                            <li>02 xícaras de farinha</li>
-                            <li>01 xícara de açúcar</li>
-                            <li>1/2 xícara de óleo</li>
-                            <li>03 ovos</li>
-                            <li>350g de cenoura</li>
-                            <li>01 colher de chá de essência de baunilha</li>
-                            <li>01 pitada de sal</li>
-                            <li>01 colher de sopa de fermento</li>
-                        </ul>
-                        <p> Obs: </p>
-                        <h3>Modo de Preparo</h3>
-                        <ul>
-                            <li> </li>
-                            <li> </li>
-                            <li> </li>
-                            <li> </li>
-                        </ul>
-                    </div>
+                <div class="lista-receita-card">
+                    <a href="pizza.html" title="Pizza"></a>
+                    <img src="img/pizza.png" alt="Pizza">
+                    <h3>Pizza</h3>
+                </div>
+
+                <div class="lista-receita-card">
+                    <a href="pao.html" title="Pão"></a>
+                    <img src="img/pão.png" alt="Pão">
+                    <h3>Pão da Mamãe</h3>
+                </div>
+
+                <div class="lista-receita-card">
+                    <a href="pao.html" title="Pão"></a>
+                    <img src="img/pão.png" alt="Pão">
+                    <h3>Pão da Mamãe</h3>
+                </div>
+
+                <div class="lista-receita-card">
+                    <a href="pao.html" title="Pão"></a>
+                    <img src="img/pão.png" alt="Pão">
+                    <h3>Pão da Mamãe</h3>
+                </div>
+
+
+                <div class="lista-receita-card">
+                    <a href="pao.html" title="Pão"></a>
+                    <img src="img/pão.png" alt="Pão">
+                    <h3>Pão da Mamãe</h3>
+                </div>
+
+
+                <div class="lista-receita-card">
+                    <a href="pao.html" title="Pão"></a>
+                    <img src="img/pão.png" alt="Pão">
+                    <h3>Pão da Mamãe</h3>
+                </div>
+
+
+                <div class="lista-receita-card">
+                    <a href="pao.html" title="Pão"></a>
+                    <img src="img/pão.png" alt="Pão">
+                    <h3>Pão da Mamãe</h3>
+                </div>
+
+
+                <div class="lista-receita-card">
+                    <a href="pao.html" title="Pão"></a>
+                    <img src="img/pão.png" alt="Pão">
+                    <h3>Pão da Mamãe</h3>
+                </div>
+
+                <div class="botao">
+                    <button onclick="voltar()">
+                        <img src="img/back.png" alt="Voltar">
+                    </button>
                 </div>
             </div>
+            <script>
+                function voltar() {
+                    window.history.back();
+                }
+            </script>
         </div>
+
+    </div>
+    </div>
 </body>
