@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Receitas</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+        <script src="./javascript.js"> </script> <!--chama o js-->
+
     <div class="container-geral">
         <div class="container-header">
             <img class="header-img" src="img/logo2.png" alt="Logo da Página">
         </div>
-
         <div class="container-principal">
             <!--menu-->
             <div class="container-esquerda">
@@ -24,13 +26,11 @@
                             <img src="img/chef.png">
                             <div class="categoria">
                                 <ul>
-                                    <li><a href="#" data-categoria="doce">Doces e Sobremesas</a></li>
-                                    <li><a href="#" data-categoria="Salgado">Salgado</a></li>
-                                    <li><a href="#" data-categoria="Saudável">Saudável</a></li>
-                                    <li><a href="#" data-categoria="Acompanhamento">Acompanhamento</a></li>
-                                    <li><a href="#" data-categoria="prato-principal">Prato Principal</a></li>
+                                    <li><a href="/PaginaReceitas/categoria-doce-sobremesa.html" id="categoria-doce">Doces e Sobremesas</a></li>
+                                    <li><a href="/PaginaReceitas/categoria-salgado.html" id="categoria-salgado">Salgados</a></li>
+                                    <li><a href="/PaginaReceitas/categoria-pratoprincipal.html" id="categoria-prato-principal">Prato Principal</a></li>
+                                    <li><a href="/PaginaReceitas/categoria-acompanhamento.html" id="categoria-acompanhamento"> Acompanhamentos</a></li>
                                 </ul>
-
                             </div>
                         </div>
                     </div>
@@ -38,24 +38,23 @@
             </div>
 
             <div class="container-ingredientes">
-                <div class="receita">
+
+                <div class="receita" id="bolo-cenoura" data-categorias="categoria-doce">
                     <div class="container-receitaimg">
-                        <img src="img/pudim.png" alt="Pudim">
+                        <img src="img/bolocenoura.png" alt="bolo-cenoura">
+
                         <div class="botao">
                             <button onclick="voltar()">
                                 <img src="img/back.png" alt="Voltar">
                             </button>
                         </div>
 
-                        <script>
-                            function voltar() {
-                                window.history.back();
-                            }
-                        </script>
+
                     </div>
 
                     <div class="Receita-ingredientes">
-                        <h1>Pudim</h1>
+                        <h1>Bolo de Cenoura</h1>
+
                         <h3>Ingredientes</h3>
                         <ul>
                             <li>02 xícaras de farinha</li>
@@ -67,16 +66,20 @@
                             <li>01 pitada de sal</li>
                             <li>01 colher de sopa de fermento</li>
                         </ul>
-                        <p> Obs: </p>
+                        <p> Obs: os ingedientes devem estar em temperatura ambiente</p>
                         <h3>Modo de Preparo</h3>
                         <ul>
-                            <li> </li>
-                            <li> </li>
-                            <li> </li>
-                            <li> </li>
+                            <li>Descascar e bater as cenouras com o óleo, ovos, essência de baulinha e açúcar </li>
+                            <li>Em um recipiente, colocar a farinha, o sal e o fermento e misturar.</li>
+                            <li>Em seguida, misturar o restante dos ingredientes</li>
+                            <li>Assar em uma assadeira pequena</li>
                         </ul>
                     </div>
+
                 </div>
+
             </div>
+
+
         </div>
 </body>
