@@ -130,6 +130,10 @@ body {
 
 .categoria li {
     margin-bottom: 10px;
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .categoria a {
