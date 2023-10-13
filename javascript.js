@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
+
     // Função para filtrar receitas por categoria
     function filtrarReceitasPorCategoria(categoria) {
         var receitas = document.querySelectorAll('.receita-card');
+        console.log(receitas);
         receitas.forEach(function(receita) {
             var categorias = receita.getAttribute('data-categorias').split(' ');
             if (categorias.includes(categoria) || categoria === 'all') {
@@ -38,8 +40,12 @@ document.addEventListener('DOMContentLoaded', function() {
         filtrarReceitasPorCategoria('acompanhamento');
     });
 
+
+
+
+
     // Função para voltar
-    function voltar() {
+    /*function voltar() {
         window.history.back();
     }
 
@@ -48,5 +54,10 @@ document.addEventListener('DOMContentLoaded', function() {
     botaoVoltar.addEventListener('click', function(event) {
         event.preventDefault(); 
         voltar();
+
+
+
+        
     });
+    */
 });

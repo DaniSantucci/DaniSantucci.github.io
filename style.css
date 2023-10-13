@@ -71,6 +71,8 @@ body {
 
 .container-esquerda {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     flex: 1;
     flex-grow: 2;
     background-color: #f1f1f1;
@@ -78,6 +80,18 @@ body {
     max-height: 300px;
     max-width: 450px;
     margin-left: 20px;
+}
+
+.busca{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.busca img {
+    border-radius: 10px;
+    align-content:flex-start;
+    order:0;
 }
 
 .container-menu {

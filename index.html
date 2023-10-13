@@ -10,7 +10,7 @@
 
 <body>
 
-        <script src="./javascript.js"> </script> <!--chama o js-->
+    <script src="./javascript.js"> </script> <!--chama o js-->
 
     <div class="container-geral">
         <div class="container-header">
@@ -28,66 +28,75 @@
                                 <ul>
                                     <li><a href="categorias.html" id="doce">Doces e Sobremesas</a></li>
                                     <li><a href="categorias.html" id="salgado">Salgados</a></li>
-                                    <li><a href="categorias.html" id="categoria-prato-principal">Prato Principal</a></li>
-                                    <li><a href="categorias.html" id="categoria-acompanhamento"> Acompanhamentos</a></li>
+                                    <li><a href="categorias.html" id="prato-principal">Prato Principal</a></li>
+                                    <li><a href="categorias.html" id="acompanhamento"> Acompanhamentos</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="busca">
+                    <img scr="img/buscar.png">
+                     <div class="botao-busca">                   
+                        <input type="text" id="campo-busca" placeholder="Digite sua busca...">
+                        <button id="botao-busca">Buscar</button>
+                     </div>   
+                </div> 
             </div>
 
 
             <div class="container-receitas">
-                <div class="receita-card"> 
+                <div class="receita-card" id="bolo-cenoura" data-categorias="doce"> 
                     <a href="bolo-cenoura.html" title="Bolo de Cenoura">
                         <img src="img/bolocenoura.png" alt="Bolo de Cenoura">
                     </a>
                     <h3>Bolo de Cenoura</h3>
                 </div>
 
-                <div class="receita-card" >
+                <div class="receita-card"  id="panqueca" data-categorias="prato-principal">
                     <a href="panqueca.html"  title="Panqueca"></a>
                     <img src="img/panqueca.png" alt="Panqueca">
                     <h3>Panqueca</h3>
                 </div>
 
-                <div class="receita-card" >
+                <div class="receita-card" id="pizza" data-categorias="salgado">
                     <a href="pizza.html" title="Pizza"></a>
                     <img src="img/pizza.png" alt="Pizza">
                     <h3>Pizza</h3>
                 </div>
 
-                <div class="receita-card" >
+                <div class="receita-card" id="pao" data-categorias="salgado">
                     <a href="pao.html" title="Pão"></a>
                     <img src="img/pão.png" alt="Pão">
                     <h3>Pão da Mamãe</h3>
                 </div>
 
-                <div class="receita-card" >
+                <div class="receita-card" id="sushi" data-categorias="prato-principal">
                     <a href="sushi.html" title="Sushi"></a>
                     <img src="img/sushi.png" alt="Sushi">
                     <h3>Sushi</h3>
                 </div>
 
-                <div class="receita-card">
+                <div class="receita-card"id="bulgogi" data-categorias="prato-principal">
                     <a href="bulgogi.html" title="bulgogi"></a>
                     <img src="img/bulgogi.png" alt="bulgogi">
                     <h3>Bulgogi</h3>
                 </div>
 
-                <div class="receita-card">
+                <div class="receita-card"id="pudim" data-categorias="doce">
                     <a href="pudim.html" title="Pudim"></a>
                     <img src="img/pudim.png" alt="Pudim">
                     <h3>Pudim</h3>
                 </div>
 
-                <div class="receita-card">
+                <div class="receita-card" id="frango-assado" data-categorias="prato-principal">
                     <a href="frango-assado.html" title="Frango Assado"></a>
                     <img src="img/frango.png" alt="Frango Assado">
                     <h3>Frango Assado</h3>
                 </div>
             </div>
+
         </div>
     </div>
 
