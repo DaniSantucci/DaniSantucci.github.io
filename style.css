@@ -1,293 +1,372 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #d4d4fa;
-}
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #d4d4fa;
+    }
 
-/*flex-box*/
-.container-geral {
-    display: flex; /*inicia o flexbox*/
-    flex-direction: column; /*colocar os itens do box em linha*/
-    gap: 20px; /* espacamento entre os itens */
-}
+    /*flex-box*/
+    .container-geral {
+        display: flex; /*inicia o flexbox*/
+        flex-direction: column; /*colocar os itens do box em linha*/
+        gap: 20px; /* espacamento entre os itens */
+        flex-wrap: wrap; /*ajusta o item dinamicamente*/
+    }
 
-.container-header {
-    display: flex;
-    flex: auto;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: #e5e5e5;
-}
+    .container-header {
+        display: flex;
+        flex: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #e5e5e5;
+    }
 
-.header-img { 
-    max-height: 200px;
-    display: block;
+    .header-img { 
+        max-height: 200px;
+        display: block;
 
-}
+    }
+
+    .container-principal {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .container-receitas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; /*joga os itens para baixo*/
+        gap: 10px;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .receita-card {
+        flex: 1 0 24%;
+        flex-shrink: 0; /* Impede que os itens encolham */
+        box-sizing: border-box;
+        text-align: center;
+        border: 1px #ccc;
+        border-radius: 10px;
+        padding: 5px; /*espaço entre o card e a imagem*/
+        background: linear-gradient(transparent 35%, #191919 100%);
+    }
+
+    .receita-card h3 {
+        margin-top: 10px;
+        font-size: 20px;
+        color: #ffffff;
+    }
+    .receita-card:hover {
+        transform: scale(1.05);
+    }
+
+    .receita-card img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .busca{
+        display: flex;
+        flex-direction: row;
+        border-radius: 10px;
+        margin-top: 1rem;
+        background-color: #f1f1f1;
+
+    }
+
+    #campo-busca {
+        font-size: 1.2em; 
+        width: 12em; 
+        
+    }
+
+    .botao-busca{
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        margin-top: 2rem;
+        margin-right: 2rem;
+        align-items: justify;
+        justify-content: center;
+    }
+
+    .busca img {
+        border-radius: 10px;
+        order:0;
+        max-width: 175px;
+    }
+
+    #resultado-busca img {
+        border-radius: 10px;
+    }
+
+    .container-esquerda {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        flex: 1;
+        flex-grow: 2;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        max-height: 300px;
+        max-width: 450px;
+        margin-left: 1rem;
+    }
+
+    .container-menu {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+ 
+
+    }
 
 
-.container-principal {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
+    .container-menu img{
+        border-radius: 10px;
+        align-content:flex-start;
+        order:0;
+        max-width: 450px;
+    }
 
-.container-receitas {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; /*joga os itens para baixo*/
-    gap: 10px;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-right: 20px;
-}
+    .container-menu-lista{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        order:1;
+        margin-left: 20px;
 
-.receita-card {
-    flex: 1 0 24%;
-    flex-shrink: 0; /* Impede que os itens encolham */
-    box-sizing: border-box;
-    text-align: center;
-    border: 1px #ccc;
-    border-radius: 10px;
-    padding: 5px; /*espaço entre o card e a imagem*/
-    background: linear-gradient(transparent 35%, #191919 100%);
-}
+    }
 
-.receita-card h3 {
-    margin-top: 10px;
-    font-size: 20px;
-    color: #ffffff;
-}
 
-.receita-card:hover {
-    transform: scale(1.05);
-}
 
-.receita-card img {
-    max-width: 100%;
-    border-radius: 10px;
-}
+    .categoria{
+        display:flex;
+        margin: 0;
+    }
 
-.container-esquerda {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex: 1;
-    flex-grow: 2;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    max-height: 300px;
-    max-width: 450px;
-    margin-left: 20px;
-}
+    .categoria ul {
+        list-style: none;
+        padding: 0;
+    }
 
-.busca{
-    display: flex;
-    flex-direction: row;
-    margin-top: 30px;
-}
+    .categoria li {
+        margin-bottom: 10px;
+        color: #333333;
+        font-weight: bold;
+        font-size: 18px;
+   
+    }  
 
-.busca img {
-    border-radius: 10px;
-    align-content:flex-start;
-    order:0;
-}
+    .categoria a{
+        transform: scale(1.05);
+        text-decoration: none; /*pra nao ficar aparecendo linha azul*/
+        cursor: pointer; 
+    }
 
-.container-menu {
-    display: flex;
-    flex-direction: column;
-}
-
-.container-menu img{
-    border-radius: 10px;
-    align-content:flex-start;
-    order:0;
-    max-width: 450px;
-}
-
-.container-menu-lista{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    order:1;
-    margin-left: 20px;
-}
-
-.back{
-    display: flex;
-}
-
-.categoria{
-    display:flex;
-    margin: 0;
-}
-
-.categoria ul {
-    list-style: none;
-    padding: 0;
-}
-
-.categoria li {
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: #333333;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.categoria a {
-    text-decoration: none;
-    color: #333333;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.container-menu-lista:hover {
-    transform: scale(1.05);
-}
-
-/*PAGINAS RECEITA*/
-.container-ingredientes {
-    display:flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    align-items: stretch;
-    margin-right: 20px;
-}
-
-.receita{
-    display:flex;
-    flex-direction: row;
-}
-
-.Receita-ingredientes h1{
-    font-size: 45px;
-    color: #FE5473;
-}
+    a:visited {
+        color: #000; /* Define a cor dos links visitados para preto */
+    } 
     
-.container-receitaimg{
-    display:flex;
-    flex-direction: column;
-    margin-left: 20px;
-    border-radius: 10px;
-    margin-top: 40px;
-}
-
-.container-ingredientes h3 {
-    color: #FE5473;
-}
-
-.Receita-ingredientes {
-    border-radius: 10px; 
-    margin-left: 20px;
-    margin-right: 20px; 
-    text-align: justify; 
-}
-
-.receita-ingredientes ul {
-    text-align: justify;
-}
-
-/*BOTÃO VOLTAR*/
-
-.botao{
-    display: flex;
-    margin-top: 20px;
-    align-self: center; /*alinha IMAGEM*/
-}
-
-.botao img{
-    border-radius: 10px;
-    height: 38px;
-    width: 99px;
-}
-
-.botao:hover {
-    transform: scale(1.05);
-}
-
-/* pagina categoria*/
+    .back{
+        display: flex;
+    }
 
 
-.lista-receitas{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; /*joga os itens para baixo*/
-    gap: 10px;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-right: 20px;
-}
+    /*PAGINAS RECEITA*/
+    .container-ingredientes {
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        align-items: stretch;
+        margin: 0;
+    }
+
+    .receita{
+        display:flex;
+        flex-direction: row;
+    }
+
+    .Receita-ingredientes h1{
+        font-size: 45px;
+        color: #FE5473;
+    }
+        
+    .container-receitaimg{
+        display:flex;
+        flex-direction: column;
+        margin-left: 20px;
+        border-radius: 10px;
+        margin-top: 40px;
+    }
+
+    .container-ingredientes h3 {
+        color: #FE5473;
+    }
+
+    .Receita-ingredientes {
+        border-radius: 10px; 
+        margin-left: 20px;
+        margin-right: 20px; 
+        text-align: justify; 
+    }
+
+    .receita-ingredientes ul {
+        text-align: justify;
+    }
+
+    /*BOTÃO VOLTAR*/
+
+    .botao{
+        display: flex;
+        margin-top: 20px;
+        align-self: center; /*alinha IMAGEM*/
+        margin-bottom: 1rem;
+    }
+
+    .botao img{
+        border-radius: 10px;
+        height: 38px;
+        width: 99px;
+    }
+
+    .botao:hover {
+        transform: scale(1.05);
+    }
+
+    /* pagina categoria*/
 
 
-.lista-receita-card {
-    flex: 1 0 15%;
-    flex-shrink: 0; /* Impede que os itens encolham */
-    box-sizing: border-box;
-    text-align: center;
-    border: 1px #ccc;
-    border-radius: 10px;
-    padding: 5px; /*espaço entre o card e a imagem*/
-    background: linear-gradient(transparent 35%, #191919 100%);
-}
-
-.lista-receita-card h3 {
-    margin-top: 10px;
-    font-size: 20px;
-    color: #ffffff;
-}
-
-.lista-receita-card:hover {
-    transform: scale(1.05);
-}
-
-.lista-receita-card img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-/*
-.see-more {
-    float: left;
-    position:auto;
-    text-align: center;
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 280px;
-    height: 187px;
-    margin-left: 35px;
-   margin-top: -313px;
-}
-
-.see-more a {
-    font-size: 18px;
-}
-
-.see-more-img {
-    float: left;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    margin-top: 21px;
-}
-
-.see-more:hover {
-    transform: scale(1.05);
-}
+    .lista-receitas{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; /*joga os itens para baixo*/
+        gap: 10px;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-right: 20px;
+    }
 
 
+    .lista-receita-card {
+        flex: 1 0 15%;
+        flex-shrink: 0; /* Impede que os itens encolham */
+        box-sizing: border-box;
+        text-align: center;
+        border: 1px #ccc;
+        border-radius: 10px;
+        padding: 5px; /*espaço entre o card e a imagem*/
+        background: linear-gradient(transparent 35%, #191919 100%);
+    }
+
+    .lista-receita-card h3 {
+        margin-top: 10px;
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    .lista-receita-card:hover {
+        transform: scale(1.05);
+    }
+
+    .lista-receita-card img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    /*RESPONSIVIDADE*/
+
+    @media screen and (max-width: 768px) {
+        .container-geral{
+            flex-direction: row;
+        }
+
+        .container-header{
+            width: 50%;
+            margin-left: 8rem;
+        }
+
+        
+        .container-principal {
+            flex-direction: column;
+            margin-right: 1rem;
+        }
+
+        .container-esquerda {
+            flex-direction: row;
+            margin-right: 1rem;
+        }
+
+        
+        .container-menu{
+            flex-direction: column;
+            margin-left: 0;
+        }
+
+        .container-menu-lista{
+            margin-left: 0;
+        }
+
+        .container-menu img{
+            width: 20rem;
+        }        
+
+    .container-menu-lista img{
+        width: 12rem;
+        height: 12rem;
+    }
 
 
-/*
+    .busca{
+        margin-top: 4rem;
+        
+    }
+        .container-receitas{
+            align-items: center;
+            margin-top: 11rem;
+            margin-left: 1rem;
+        }
+       
+        .receita-card{
+            flex: 1 0 40%;
+        }
+        
+/*PAG DE RECEITA*/
 
+        .container-geral{
+            align-content: center;
+        }
+        .container-ingredientes{
+            flex-direction: row;
 
-*/
+            margin: 0;
+            align-items: center;
+        }
+
+        .receita-ingredientes{
+            flex-direction: row;
+            margin: 0;
+        }
+
+        .container-receitaimg{
+            margin: 0;
+        }
+        .receita{
+            flex-direction: column;
+            margin: 0;
+        }
+
+        .receita img{
+            margin-top: 5rem;
+        }
+
+    }

@@ -17,60 +17,53 @@
             <img class="header-img" src="img/logo2.png" alt="Logo da Página">
         </div>
         <div class="container-principal">
-            <!--menu-->
+            <!--menu esquerdo-->
             <div class="container-esquerda">
                 <div class="container-menu">
                     <img src="img/categoria.png" alt="menu">
-                    <div class="container-menu-lista">
+                   <div class="container-menu-lista">
                         <div class="back">
                             <img src="img/chef.png">
                             <div class="categoria">
                                 <ul>
-                                    <li id="doce">Doces e Sobremesas</li>
-                                    <li id="salgado">Salgados</li>
-                                    <li id="prato-principal">Prato Principal</li>
-                                    <li id="acompanhamento"> Acompanhamentos</li>
-                                    <li id="todos"> Todos</li>
+                                    <li id="doce"> <a href="#">Doces e Sobremesas</a> </li>
+                                    <li id="salgado"><a href="#">Salgados</a> </li>
+                                    <li id="prato-principal"><a href="#">Prato Principal</a> </li>
+                                    <li id="acompanhamento"> <a href="#">Acompanhamentos</a> </li>
+                                    <li id="todos"><a href="#">Todos</a> </li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                   </div>
                 </div>
-
+                <!--botao buscar-->
+               
                 <div class="busca">
-                    <img scr="img/buscar.png">
+                    <img src="img/buscar.png" alt="buscar">
                      <div class="botao-busca">                   
-                        <input type="text" id="campo-busca" placeholder="Digite sua busca...">
-                        <button id="botao-busca">Buscar</button>
+                        <input type="text" id="campo-busca" placeholder="Procurar Receita">
+                        <button id="botao-busca">
+                            <img src="img/buscarbotao.png" alt="Ícone de Busca">    
+                        </button>
                      </div>   
                 </div> 
             </div>
 
 
             <div  id="lista-receitas" class="container-receitas">
-                <!-- items serão incluídos dinamicamente através do javascript -->
+                <!--item 2 do javascrip, com o scrip os itens entram de forma dinamica-->
+
             </div>
-
+            <div id="resultado-busca" style="display: none;">
+                <img src="img/not-found.png" alt="Não localizado">
+            </div>     
         </div>
-    </div>
-
-    <!--  
-    
-
-    <div class="see-more">
-        <a href="pagina_categorias.html"></a>
-        <img src="img/seemore.png" alt="Veja Mais" class="see-more-img">
-
-    </div>
 
 
     
+    </div>   
 
-        </div>
-    </div> -->
-
-
-
+ 
 </body>
 
 </html>
