@@ -175,6 +175,10 @@ a:visited {
     display: flex;
 }
 
+#resultado-busca{
+    display:flex;
+    width: 70rem;
+}
 
 /*PAGINAS RECEITA*/
 .container-ingredientes {
@@ -393,4 +397,10 @@ hr {
         margin-top: 5rem;
     }
 
+    #resultado-busca{
+        display:flex;
+        width: 50rem;
+        margin-left: 2rem;
+    }
+    
 }

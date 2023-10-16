@@ -2,21 +2,33 @@ const items_receita = [ /* 1 - adicionar cada vez que incluir receita, cada linh
     { id: "bolo-cenoura", data_categorias: "doce", title: "Bolo de Cenoura", link: "bolo-cenoura.html", image: "img/bolocenoura.png", destaque: true },
     { id: "Bananoffe", data_categorias: "doce", title: "Bananoffe", link: "Bananoffe.html", image: "img/Bananoffe.png", destaque: true },  
     { id: "pudim", data_categorias: "doce", title: "Pudim", link: "pudim.html", image: "img/pudim.png", destaque: true },
-    { id: "panqueca", data_categorias: "prato-principal", title: "Panqueca", link: "panqueca.html", image: "img/panqueca.png", destaque: true },
+    { id: "donuts", data_categorias: "doce", title: "Donuts", link: "donuts.html", image: "img/donuts.png", destaque: true },
+    { id: "panqueca", data_categorias: "prato-principal", title: "Panqueca", link: "panqueca.html", image: "img/panqueca.png", destaque: false },
     { id: "pizza", data_categorias: "salgado", title: "Pizza", link: "pizza.html", image: "img/pizza.png", destaque: true },
     { id: "pao", data_categorias: "salgado", title: "Pão", link: "pao.html", image: "img/pão.png", destaque: true },
+    { id: "coxinha", data_categorias: "salgado", title: "Coxinha", link: "coxinha.html", image: "img/coxinha.png", destaque: false },
+    { id: "kibe", data_categorias: "salgado", title: "Kibe", link: "kibe.html", image: "img/kibe.png", destaque: false },
     { id: "sushi", data_categorias: "prato-principal", title: "Sushi", link: "sushi.html", image: "img/sushi.png", destaque: true },
     { id: "bulgogi", data_categorias: "prato-principal", title: "Bulgogi", link: "bulgogi.html", image: "img/bulgogi.png", destaque: true },
+    { id: "frango-assado-com-cerveja", data_categorias: "prato-principal", title: "Frango Assado com Cerveja", link: "frango-cerveja.html", image: "img/frango-cerveja.png", destaque: false },
     { id: "frango-assado", data_categorias: "prato-principal", title: "Frango Assado", link: "frango-assado.html", image: "img/frango.png", destaque: false },
-    { id: "donuts", data_categorias: "doce", title: "donuts", link: "donuts.html", image: "img/donuts.png", destaque: false },
+    { id: "bife-mongoliano", data_categorias: "prato-principal", title: "Bife Mongoliano", link: "bife-mongoliano.html", image: "img/bife-mongoliano.png", destaque: false },
     { id: "abobrinha-recheada", data_categorias: "prato-principal", title: "Abobrinha Recheada", link: "abobrinha-recheada.html", image: "img/abobrinha.png", destaque: false },
-    { id: "Arroz-da-Tasmania", data_categorias: "prato-principal", title: "Arroz da Tasmania", link: "Arroz-da-Tasmania.html", image: "img/Arroz-da-Tasmania.png", destaque: false },
-    { id: "Beringela-Recheada", data_categorias: "acompanhamento", title: "Beringela Recheada", link: "Beringela-recheada.html", image: "img/Beringela.png", destaque: false },
+    { id: "Arroz-da-Tasmania", data_categorias: "prato-principal", title: "Arroz da Tasmania", link: "Arroz-Tasmania.html", image: "img/Arroz-da-Tasmania.png", destaque: false },
+    { id: "Beringela-Recheada", data_categorias: "prato-principal", title: "Beringela Recheada", link: "Beringela-recheada.html", image: "img/Beringela.png", destaque: false },
     { id: "Buffalo-Wings", data_categorias: "prato-principal", title: "Buffalo Wings", link: "Buffalo-Wings.html", image: "img/Buffalo-Wings.png", destaque: false },
     { id: "Charuto-de-repolho", data_categorias: "prato-principal", title: "Charuto de repolho", link: "Charuto-de-repolho.html", image: "img/Charuto-de-repolho.png", destaque: false },
     { id: "Creme-Chines", data_categorias: "doce", title: "Creme Chinês", link: "Creme-chines.html", image: "img/Creme-chines.png", destaque: false },
     { id: "Creme-de-espinafre", data_categorias: "acompanhamento", title: "Creme de Espinafre", link: "Creme-de-Espinafre.html", image: "img/Creme-espinafre.png", destaque: false },
+    { id: "Beringela-Agridoce", data_categorias: "prato-principal", title: "Beringela Agridoce", link: "beringela-agridoce.html", image: "img/beringela-agridoce.png", destaque: false},
+    { id: "Dadinho-tapioca", data_categorias: "acompanhamento", title: "Dadinho de Tapioca", link: "dadinho-tapioca.html", image: "img/dadinho-tapioca.png", destaque: false },
+    { id: "Kimchi", data_categorias: "acompanhamento", title: "Kimchi", link: "kimchi.html", image: "img/kimchi.png", destaque: false },
     { id: "Molho-barbecue", data_categorias: "acompanhamento", title: "Molho Barbecue", link: "Molho-barbecue.html", image: "img/molho-barbecue.png", destaque: false },
+    { id: "Panetone", data_categorias: "doce", title: "Panetone", link: "panetone.html", image: "img/panetone.png", destaque: false },
+    { id: "Bolo-chocolate", data_categorias: "doce", title: "Bolo de Chocolate", link: "bolo-chocolate.html", image: "img/bolo-chocolate.png", destaque: false },
+    { id: "Brigadeiro", data_categorias: "doce", title: "Brigadeiro", link: "brigadeiro.html", image: "img/brigadeiro.png", destaque: false },
+
+
 ]
 
 function adicionarReceita(item) {
@@ -38,10 +50,13 @@ function adicionarReceita(item) {
 
     // Adiciona a imagem ao link
     link.appendChild(img);
+     
 
     // Cria o elemento 'h3' para o título
     var h3 = document.createElement('h3');
     h3.textContent = item.title;
+    link.appendChild(h3);
+
 
     // Adiciona o link e o título à div da receita
     divReceita.appendChild(link);
@@ -139,7 +154,6 @@ document.addEventListener('DOMContentLoaded', function () {
         var termoBusca = document.getElementById('campo-busca').value.toLowerCase();
         var receitas = document.querySelectorAll('.receita-card');
         var itemEncontrado = false;
-        //var naoEncontrado = document.getElementById('resultado-busca');
 
         receitas.forEach(function (receita) {
             var tituloReceita = receita.querySelector('h3').textContent.toLowerCase();
