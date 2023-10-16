@@ -3,7 +3,7 @@ const items_receita = [ /* 1 - adicionar cada vez que incluir receita, cada linh
     { id: "Bananoffe", data_categorias: "doce", title: "Bananoffe", link: "Bananoffe.html", image: "img/bananoffe.png", destaque: true },  
     { id: "pudim", data_categorias: "doce", title: "Pudim", link: "pudim.html", image: "img/pudim.png", destaque: true },
     { id: "donuts", data_categorias: "doce", title: "Donuts", link: "donuts.html", image: "img/donuts.png", destaque: true },
-    { id: "sushi", data_categorias: "prato-principal", title: "Sushi", link: "sushi.html", image: "img/Sushi.png", destaque: true },
+    { id: "sushi", data_categorias: "prato-principal", title: "Sushi", link: "sushi.html", image: "img/sushi.png", destaque: true },
     { id: "bulgogi", data_categorias: "prato-principal", title: "Bulgogi", link: "bulgogi.html", image: "img/bulgogi.png", destaque: true },
     { id: "pizza", data_categorias: "salgado", title: "Pizza", link: "pizza.html", image: "img/pizza.png", destaque: true },
     { id: "pao", data_categorias: "salgado", title: "Pão", link: "pao.html", image: "img/pão.png", destaque: true },

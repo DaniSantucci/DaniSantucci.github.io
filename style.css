@@ -28,6 +28,7 @@ body {
 .header-img {
     max-height: 150px;
     display: block;
+    max-width: 100%;
 
 }
 
@@ -326,17 +327,31 @@ hr {
     }
 
     .container-geral {
-        flex-direction: column;
+        
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center; /* Adicionado para centralizar verticalmente */
+               
 
     }
 
     .container-header {
-        max-width: 1080px;
+      
+            display: flex;
+            flex: auto;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: #e5e5e5;
+            max-width: 100%; /* Adicionado para evitar expansão excessiva */       
     }
 
     .header-img {
         margin-left: 1rem;
         max-width: 1080px;
+        display:block;
     }
 
 
