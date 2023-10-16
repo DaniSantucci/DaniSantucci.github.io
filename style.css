@@ -139,10 +139,7 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     order:1;
-
 }
-
-
 
 .categoria{
     display:flex;
@@ -159,8 +156,6 @@ body {
     color: #333333;
     font-weight: bold;
     font-size: 18px;
-
-
 }  
 
 .categoria a{
@@ -207,9 +202,7 @@ a:visited {
     margin-bottom: 2rem;
     border-radius: 10%;
 }
-
-
-    
+  
 .container-receitaimg{
     display:flex;
     flex-direction: column;
@@ -222,7 +215,6 @@ a:visited {
 
 .container-receitaimg img{
     border-radius: 10px;
-
     width: 500px;
     height: 400px;
 }
@@ -248,7 +240,6 @@ hr {
     margin-left: 1rem;
     margin-right: 7rem; 
     text-align: justify;
-
 }
 
 .receita-ingredientes ul {
@@ -281,7 +272,6 @@ hr {
     align-items: center;
     margin-right: 2rem;
 }
-
 
 .lista-receita-card {
     flex: 1 0 15%;
@@ -316,30 +306,24 @@ hr {
 @media screen and (max-width:  1080px) {
     .container-geral{
         flex-direction: column;
-        max-width: 1080px;
-
     }
 
     .container-header{
-       
-        height: 152px;
+       max-width: 1080px;
     }
 
     .header-img{
-        margin-left: 1rem;
-        
-        height: 152px;
+        margin-left: 1rem;        
+        max-width: 1080px;
     }
 
 
     .container-principal {
         flex-direction: column;
-
     }
 
     .container-esquerda {
        gap: 2rem;
-    
        flex-direction: column;
        margin-left: 2rem;
        margin-right: 2rem;
