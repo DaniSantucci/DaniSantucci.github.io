@@ -120,10 +120,12 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-
-
 }
 
+.container-menu-lista:hover{
+    transform: scale(1.05);
+
+}
 
 .container-menu img{
     border-radius: 10px;
@@ -159,12 +161,14 @@ body {
     font-weight: bold;
     font-size: 18px;
 
+
 }  
 
 .categoria a{
     transform: scale(1.05);
     text-decoration: none; /*pra nao ficar aparecendo linha azul*/
     cursor: pointer; 
+    color:#191919;
 }
 
 a:visited {
@@ -261,19 +265,14 @@ hr {
     margin-bottom: 1rem;
 }
 
+
 .botao img{
     border-radius: 10px;
     height: 38px;
     width: 99px;
 }
 
-.botao:hover {
-    transform: scale(1.05);
-}
-
 /* pagina categoria*/
-
-
 .lista-receitas{
     display: flex;
     flex-direction: row;
@@ -358,6 +357,8 @@ hr {
     margin-top: 4rem;
     
 }
+
+
     .container-receitas{
         align-items: center;
         margin-top: 11rem;
