@@ -366,6 +366,7 @@ hr {
         padding: 0 20px;
         box-sizing: border-box;
         background-color: #f1f1f1;
+        border-radius: 10px;
     }
 
     .container-principal {
@@ -436,7 +437,7 @@ hr {
         gap: 2rem;
         margin-right: 3rem;
         margin-left: 3rem;
-        margin-top: 25rem;
+        margin-top: 22rem;
     }
 
     .receita-card {
