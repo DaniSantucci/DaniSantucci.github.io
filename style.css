@@ -335,7 +335,7 @@ hr {
 
     .busca img {
         margin-top: 1rem;
-        margin-left: 4rem;
+        margin-left: 2rem;
         margin-right: 2rem;
     }
 
@@ -483,10 +483,6 @@ hr {
         flex-direction: column;
     }
 
-    receita-card h3 {
-        font-size: 35px;
-    } 
-
     .categoria li {
         font-size: 35px;
     }
@@ -494,6 +490,7 @@ hr {
     .back img{
         max-width: 100%;
         max-height: 100%;
+        margin-left: -1rem
     }
 
     .container-ingredientes h1{
@@ -515,5 +512,12 @@ hr {
 
         .container-ingredientes p{
             font-size: 32px;
+        }
+
+
+        .receita-card h3 {
+
+            font-size: 35px;
+      
         }
 }
