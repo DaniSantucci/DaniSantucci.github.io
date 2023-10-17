@@ -26,7 +26,6 @@ body {
 }
 
 .header-img {
-    max-height: 150px;
     display: block;
     max-width: 100%;
 
@@ -111,6 +110,7 @@ body {
 
 #resultado-busca img {
     border-radius: 10px;
+    max-width: 100%;
 }
 
 .container-esquerda {
