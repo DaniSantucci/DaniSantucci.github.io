@@ -379,12 +379,15 @@ hr {
         background-color: #f1f1f1;
     }
 
+    .container-menu img {
+        max-width: 800px;
+    }
+
     .button img {
         margin-left: 0;
     }
 
     #campo-busca {
-        max-width: 800px;
         font-size: 2em;
         width: 28rem;
     }
@@ -496,9 +499,12 @@ hr {
     }
 
     .back img {
-        max-width: 100%;
-        max-height: 100%;
-        margin-left: -1rem
+        justify-content: center;
+        align-items: center;
+        max-width: 250px;
+        max-height: 250px;
+        
+        margin-top: 2rem
     }
 
     .container-ingredientes h1 {
