@@ -97,7 +97,8 @@ body {
     flex-direction: column;
     border-radius: 10px;
     margin-top: 2rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     align-items: justify;
     justify-content: center;
 }
@@ -131,10 +132,7 @@ body {
     border-radius: 10px;
 }
 
-.container-menu-lista:hover {
-    transform: scale(1.05);
 
-}
 
 .container-menu img {
     border-radius: 10px;
@@ -168,7 +166,7 @@ body {
 }
 
 .categoria a {
-    transform: scale(1.05);
+
     text-decoration: none;
     /*pra nao ficar aparecendo linha azul*/
     cursor: pointer;
@@ -326,26 +324,34 @@ hr {
         zoom: 50%;
     }
 
-    .container-geral {
-        
+    .container-geral {       
             display: flex;
             flex-direction: column;
             gap: 20px;
             flex-wrap: wrap;
             align-items: center; /* Adicionado para centralizar verticalmente */
-               
-
+            margin-top: 1rem;
     }
 
-    .container-header {
-      
+    .busca img {
+        margin-top: 1rem;
+        margin-left: 4rem;
+        margin-right: 2rem;
+    }
+
+    .botao-busca{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .container-header {   
             display: flex;
             flex: auto;
             flex-direction: row;
             align-items: center;
             justify-content: center;
             background-color: #e5e5e5;
-            max-width: 100%; /* Adicionado para evitar expansão excessiva */       
+            max-width: 1079px; /* Adicionado para evitar expansão excessiva */       
     }
 
     .header-img {
@@ -369,9 +375,13 @@ hr {
         background-color:#f1f1f1 ;
     }
 
+    .button img{
+        margin-left: 0;
+    }
     #campo-busca {
         max-width: 800px;
         font-size: 2em;
+        width: 28rem;
     }
 
     .container-menu {
@@ -473,7 +483,7 @@ hr {
     }
 
     .receita-card h3{
-        font-size: 50px;
+        font-size: 35px;
     }
     .categoria li {
         font-size: 35px;
