@@ -330,7 +330,6 @@ hr {
             gap: 20px;
             flex-wrap: wrap;
             align-items: center; /* Adicionado para centralizar verticalmente */
-            margin-top: 1rem;
     }
 
     .busca img {
@@ -407,6 +406,7 @@ hr {
         display: flex;
         align-items: center;
         background-color: #f1f1f1;
+        margin-top: 1rem;
     }
 
     .container-ingredientes {
