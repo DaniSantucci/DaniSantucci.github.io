@@ -345,20 +345,21 @@ hr {
     }
 
     .container-header {   
+        margin-top: 1rem;
             display: flex;
             flex: auto;
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            background-color: #e5e5e5;
-            max-width: 1079px; /* Adicionado para evitar expansão excessiva */       
+            background-color: #e5e5e5;     
     }
 
     .header-img {
-        margin-left: 1rem;
-        max-width: 1080px;
-        display:block;
+            max-width: 100%; /* Define a largura máxima como 100% */
+            height: auto; /* Mantém a proporção da imagem */
     }
+
+
     .categoria{
     width: 800px;
     background-color: #f1f1f1;
@@ -482,9 +483,10 @@ hr {
         flex-direction: column;
     }
 
-    .receita-card h3{
+    receita-card h3 {
         font-size: 35px;
-    }
+    } 
+
     .categoria li {
         font-size: 35px;
     }
@@ -495,18 +497,23 @@ hr {
     }
 
     .container-ingredientes h1{
-        font-size: 60px;
+        font-size: 70px;
         text-align: center; ;
+        margin-top: 1rem;
     }
         .container-ingredientes h3{
-            font-size: 40px;
+            font-size: 52px;
         }
 
         .container-ingredientes h2{
-            font-size: 30px;
+            font-size: 35px;
         }
 
-        .container-ingredientes li, p{
-            font-size: 28px;
+        .container-ingredientes li{
+            font-size: 32px;
+        }
+
+        .container-ingredientes p{
+            font-size: 32px;
         }
 }
