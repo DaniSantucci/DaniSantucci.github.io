@@ -122,7 +122,6 @@ body {
     background-color: #f1f1f1;
     border-radius: 10px;
     max-height: 300px;
-    max-width: 450px;
     margin-left: 1rem;
 }
 
@@ -517,8 +516,6 @@ hr {
         max-width: 100%;
         height: auto;   
         margin-top: 2rem;
-        max-width: 250px;
-        max-height: 200px;
     }
 
     .container-ingredientes h1 {
