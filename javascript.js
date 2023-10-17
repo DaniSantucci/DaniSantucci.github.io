@@ -27,8 +27,6 @@ const items_receita = [ /* 1 - adicionar cada vez que incluir receita, cada linh
     { id: "Panetone", data_categorias: "doce", title: "Panetone", link: "panetone.html", image: "img/panetone.png", destaque: false },
     { id: "Bolo-chocolate", data_categorias: "doce", title: "Bolo de Chocolate", link: "bolo-chocolate.html", image: "img/bolo-chocolate.png", destaque: false },
     { id: "Brigadeiro", data_categorias: "doce", title: "Brigadeiro", link: "brigadeiro.html", image: "img/brigadeiro.png", destaque: false },
-
-
 ]
 
 function adicionarReceita(item) {

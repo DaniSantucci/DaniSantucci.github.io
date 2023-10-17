@@ -4,30 +4,28 @@ body {
     background-color: #d4d4fa;
 }
 
-/*flex-box*/
 .container-geral {
     display: flex;
-    /*inicia o flexbox*/
     flex-direction: column;
     /*colocar os itens do box em linha*/
     gap: 20px;
     /* espacamento entre os itens */
     flex-wrap: wrap;
-    /*ajusta o item dinamicamente*/
+    /*ajusta o item dinamicamente, ou seja, no caso de responsividade ele se auto ajusta*/
 }
 
 .container-header {
     display: flex;
     flex: auto;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: row;     /*colocar os itens do box em coluna*/
+    align-items: center;    /*centraliza os itens do flexbox no centro, precisa do justify-content pra funcionar bem*/
     justify-content: center;
     background-color: #e5e5e5;
 }
 
 .header-img {
     display: block;
-    max-width: 100%;
+    max-width: 100%; /*colocar em 100% pra nao dar problema na responsividade*/
 
 }
 
@@ -41,7 +39,6 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /*joga os itens para baixo*/
     gap: 10px;
     justify-content: space-evenly;
     align-items: center;
@@ -68,12 +65,12 @@ body {
 }
 
 .receita-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /*faz a imagem "crescer" qdo passa o mouse*/
 }
 
 .receita-card img {
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 10px; /*deixa borda redonda*/
 }
 
 .busca {
@@ -81,7 +78,7 @@ body {
     flex-direction: row;
     border-radius: 10px;
     background-color: #f1f1f1;
-    justify-content: center;    
+    justify-content: center;
     align-items: center;
 }
 
@@ -113,7 +110,8 @@ body {
     max-width: 100%;
 }
 
-.container-esquerda {   /*main*/
+.container-esquerda {
+    /*main*/
     display: flex;
     flex-wrap: wrap;
     flex: 1 0 50%;
@@ -130,13 +128,14 @@ body {
     border-radius: 10px;
 }
 
-.container-menu-img{
+.container-menu-img {
     display: flex;
     flex-direction: row;
     border-radius: 10px;
     justify-content: center;
     background-color: #f1f1f1;
-    align-items: center; /*centraliza horizontalmente*/
+    align-items: center;
+  
 }
 
 .container-menu img {
@@ -232,7 +231,6 @@ a:visited {
     border-radius: 10px;
     margin-top: 40px;
     align-items: center;
-    /* Adicionado para centralizar horizontalmente */
 }
 
 .container-receitaimg img {
@@ -253,7 +251,6 @@ a:visited {
 
 hr {
     margin-top: -1.5rem;
-    /* Ajuste a margem conforme necessÃ¡rio */
 }
 
 .container-ingredientes h3 {
@@ -292,7 +289,6 @@ hr {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /*joga os itens para baixo*/
     gap: 10px;
     justify-content: space-evenly;
     align-items: center;
@@ -302,13 +298,11 @@ hr {
 .lista-receita-card {
     flex: 1 0 15%;
     flex-shrink: 0;
-    /* Impede que os itens encolham */
     box-sizing: border-box;
     text-align: center;
     border: 1px #ccc;
     border-radius: 10px;
     padding: 5px;
-    /*espaÃ§o entre o card e a imagem*/
     background: linear-gradient(transparent 35%, #191919 100%);
 }
 
@@ -342,7 +336,6 @@ hr {
         gap: 20px;
         flex-wrap: wrap;
         align-items: center;
-        /* Adicionado para centralizar verticalmente */
     }
 
     .busca img {
@@ -370,7 +363,7 @@ hr {
     }
 
 
-    .categoria {        
+    .categoria {
         max-width: 100%;
         padding: 0 20px;
         box-sizing: border-box;
@@ -409,7 +402,7 @@ hr {
         border-radius: 10px;
     }
 
-    .container-menu-img{      
+    .container-menu-img {
         max-width: 100%;
     }
 
@@ -450,8 +443,6 @@ hr {
         width: 400px;
     }
 
-    /*PAG DE RECEITA*/
-
 
     .container-ingredientes {
         flex-direction: row;
@@ -466,7 +457,6 @@ hr {
         margin-left: 1REM;
         margin-right: 1REM;
         margin-bottom: 1rem;
-
     }
 
     .container-receitaimg {
@@ -486,16 +476,11 @@ hr {
         margin: 0;
     }
 
-
-
     #resultado-busca {
         display: flex;
         width: 50rem;
         margin-left: 2rem;
     }
-
-
-
 
     .botao {
         display: flex;
@@ -506,7 +491,6 @@ hr {
         font-size: 35px;
     }
 
-
     .categoria img {
         max-width: 100%;
         height: auto;
@@ -516,7 +500,7 @@ hr {
         justify-content: center;
         align-items: center;
         max-width: 100%;
-        height: auto;   
+        height: auto;
     }
 
     .container-ingredientes h1 {
@@ -541,10 +525,7 @@ hr {
         font-size: 32px;
     }
 
-
     .receita-card h3 {
-
         font-size: 35px;
-
     }
 }
