@@ -517,6 +517,8 @@ hr {
         max-width: 100%;
         height: auto;   
         margin-top: 2rem;
+        max-width: 250px;
+        max-height: 200px;
     }
 
     .container-ingredientes h1 {
