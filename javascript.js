@@ -189,6 +189,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Backspace') {
+            return true; // faz com que o backspace funcione na pagina
+        }
+    });
 
     
 });
