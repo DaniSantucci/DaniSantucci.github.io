@@ -80,9 +80,9 @@ body {
     display: flex;
     flex-direction: row;
     border-radius: 10px;
-    margin-top: 1rem;
     background-color: #f1f1f1;
-
+    justify-content: center;    
+    align-items: center;
 }
 
 #campo-busca {
@@ -423,7 +423,8 @@ hr {
         display: flex;
         align-items: center;
         background-color: #f1f1f1;
-        margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
     }
 
     .container-ingredientes {
