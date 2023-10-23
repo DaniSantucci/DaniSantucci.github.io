@@ -110,7 +110,8 @@ body {
     max-width: 100%;
 }
 
-.container-esquerda { /*main*/
+.container-esquerda {
+    /*main*/
     display: flex;
     flex-wrap: wrap;
     flex: 1 0 50%;
@@ -122,7 +123,7 @@ body {
     align-items:flex-start;
     align-content: flex-start;
     align-self: flex-start;
-    gap: 1rem;   
+    
 }
 
 .container-menu {
@@ -180,7 +181,7 @@ body {
     text-decoration: none;
     /*pra nao ficar aparecendo linha azul*/
     cursor: pointer;
-    color:#232323;
+    color: #191919;
 }
 
 a:visited {
@@ -329,7 +330,9 @@ hr {
 /*RESPONSIVIDADE*/
 
 @media screen and (max-width: 1080px) {
-
+    body {
+        zoom: 50%;
+    }
 
     .container-geral {
         display: flex;
