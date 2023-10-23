@@ -4,6 +4,7 @@ body {
     background-color: #d4d4fa;
 }
 
+
 .container-geral {
     display: flex;
     flex-direction: column;
@@ -33,6 +34,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    
 }
 
 .container-receitas {
@@ -55,7 +57,7 @@ body {
     border-radius: 10px;
     padding: 5px;
     /*espaÃ§o entre o card e a imagem*/
-    background: linear-gradient(transparent 35%, #191919 100%);
+    background: linear-gradient(transparent 55%, #4b4b80 100%);
 }
 
 .receita-card h3 {
@@ -73,20 +75,28 @@ body {
     border-radius: 10px; /*deixa borda redonda*/
 }
 
+
+
 .busca {
     display: flex;
-    flex-direction: row;
-    border-radius: 10px;
+    flex-wrap: wrap;
+    bottom: 0;
     background-color: #f1f1f1;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-height: 200px;   
+    position: relative;
+    margin-top: 0.5rem;
+    border-radius: 10px;
 }
 
 #campo-busca {
+
     font-size: 1.2em;
     width: 12em;
-
 }
+
 
 .botao-busca {
     display: flex;
@@ -120,6 +130,11 @@ body {
     flex-grow: 2;
     border-radius: 10px;
     margin-left: 1rem;
+    align-items:flex-start;
+    align-content: flex-start;
+    align-self: flex-start;
+    gap: 1rem;
+
 }
 
 .container-menu {
@@ -150,17 +165,21 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     order: 1;
+    gap: 2rem;
+    margin-top: 1rem;
 }
 
 .categoria {
     display: flex;
     border-radius: 10px;
     margin: 0;
+    box-sizing: border-box;
+
 }
 
 .categoria ul {
     list-style: none;
-
+    padding: 1rem;
 }
 
 
@@ -177,7 +196,7 @@ body {
     text-decoration: none;
     /*pra nao ficar aparecendo linha azul*/
     cursor: pointer;
-    color: #191919;
+    color:#232323;
 }
 
 a:visited {
@@ -191,6 +210,7 @@ a:visited {
     border-radius: 10px;
     justify-content: center;
     align-items: center;
+
 }
 
 #resultado-busca {
@@ -326,9 +346,6 @@ hr {
 /*RESPONSIVIDADE*/
 
 @media screen and (max-width: 1080px) {
-    body {
-        zoom: 50%;
-    }
 
     .container-geral {
         display: flex;
@@ -414,12 +431,7 @@ hr {
     }
 
 
-    .busca {
-        display: flex;
-        background-color: #f1f1f1;
-        justify-content: center;
-        align-items: center;
-    }
+
 
     .container-ingredientes {
         margin-left: 1rem;
@@ -501,6 +513,8 @@ hr {
         align-items: center;
         max-width: 100%;
         height: auto;
+        margin-top: 2rem
+
     }
 
     .container-ingredientes h1 {
