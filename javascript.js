@@ -169,6 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             mostarMensagemBusca();
         }
+
     }
 
     // Adiciona um event listener ao botão de busca
