@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:helvetica , sans-serif, arial;
     margin: 0;
     background-color: #d4d4fa;
 }
@@ -80,6 +80,7 @@ body {
     background-color: #f1f1f1;
     justify-content: center;
     align-items: center;
+    margin-top:1rem;
 }
 
 #campo-busca {
@@ -107,7 +108,7 @@ body {
 
 #resultado-busca img {
     border-radius: 10px;
-    max-width: 100%;
+    max-width: 80%;
 }
 
 .container-esquerda {
@@ -164,6 +165,8 @@ body {
 
 .categoria ul {
     list-style: none;
+    padding: 0;
+    margin-right: 1rem;
 
 }
 
@@ -182,6 +185,7 @@ body {
     /*pra nao ficar aparecendo linha azul*/
     cursor: pointer;
     color: #191919;
+    font-family:helvetica, Arial, sans-serif;
 }
 
 a:visited {
@@ -227,6 +231,9 @@ a:visited {
     border-radius: 10%;
 }
 
+.li{
+    font-family: Helvetica, arial, sans-serif;
+}
 .container-receitaimg {
     display: flex;
     flex-direction: column;
@@ -246,11 +253,13 @@ a:visited {
 .Receita-ingredientes h1 {
     font-size: 40px;
     color: #FE5473;
+    font-family:helvetica, Arial, sans-serif;
 }
 
 .container-ingredientes h2 {
     color: #FE5473;
     font-size: 30px;
+    font-family:helvetica, Arial, sans-serif;
 }
 
 hr {
@@ -259,6 +268,7 @@ hr {
 
 .container-ingredientes h3 {
     color: #FE5473;
+    font-family:helvetica, Arial, sans-serif;
 }
 
 .Receita-ingredientes {
@@ -423,6 +433,7 @@ hr {
         background-color: #f1f1f1;
         justify-content: center;
         align-items: center;
+        margin-top: 1rem;
     }
 
     .container-ingredientes {
@@ -493,6 +504,8 @@ hr {
 
     .categoria li {
         font-size: 35px;
+        color: #333333;
+        font-family:helvetica;
     }
 
     .categoria img {
@@ -515,18 +528,22 @@ hr {
 
     .container-ingredientes h3 {
         font-size: 52px;
+        font-family:helvetica, Arial, sans-serif;
     }
 
     .container-ingredientes h2 {
         font-size: 35px;
+        font-family:helvetica, Arial, sans-serif;
     }
 
     .container-ingredientes li {
         font-size: 32px;
+        font-family:helvetica, Arial, sans-serif;
     }
 
     .container-ingredientes p {
         font-size: 32px;
+        font-family:helvetica, Arial, sans-serif;
     }
 
     .receita-card h3 {
