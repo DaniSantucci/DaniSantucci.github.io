@@ -20,12 +20,15 @@ const items_receita = [ /* 1 - adicionar cada vez que incluir receita, cada linh
     { id: "Charuto-de-couve", data_categorias: "prato-principal", title: "Charuto de Couve", link: "Charuto-de-couve.html", image: "img/charuto.png", destaque: false },
     { id: "Creme-Chines", data_categorias: "doce", title: "Creme Chinês", link: "creme-chines.html", image: "img/creme-chines.png", destaque: false },
     { id: "Creme-de-espinafre", data_categorias: "acompanhamento", title: "Creme de Espinafre", link: "creme-de-espinafre.html", image: "img/Creme-Espinafre.png", destaque: false },
-    { id: "Beringela-Agridoce", data_categorias: "prato-principal", title: "Beringela Agridoce", link: "beringela-agridoce.html", image: "img/beringela-agridoce.png", destaque: false},
+    { id: "Bolinho-de-Arroz", data_categorias: "acompanhamento", title: "Bolinho de Arroz", link: "bolinho-de-arroz.html", image: "img/bolinho-de-arroz.png", destaque: false },
+    { id: "Beringela-Agridoce", data_categorias: "acompanhamento", title: "Beringela Agridoce", link: "beringela-agridoce.html", image: "img/beringela-agridoce.png", destaque: false},
+    { id: "Torta-de-Milho", data_categorias: "prato-principal", title: "Torta de Milho", link: "torta-de-milho.html", image: "img/torta-de-milho.png", destaque: false},
     { id: "Dadinho-tapioca", data_categorias: "acompanhamento", title: "Dadinho de Tapioca", link: "dadinho-tapioca.html", image: "img/dadinho-tapioca.png", destaque: false },
     { id: "Kimchi", data_categorias: "acompanhamento", title: "Kimchi", link: "kimchi.html", image: "img/kimchi.png", destaque: false },
     { id: "Molho-barbecue", data_categorias: "acompanhamento", title: "Molho Barbecue", link: "molho-barbecue.html", image: "img/Molho-Barbecue.png", destaque: false },
     { id: "Panetone", data_categorias: "doce", title: "Panetone", link: "panetone.html", image: "img/panetone.png", destaque: false },
     { id: "Bolo-chocolate", data_categorias: "doce", title: "Bolo de Chocolate", link: "bolo-chocolate.html", image: "img/bolo-chocolate.png", destaque: false },
+    { id: "Massa-Podre", data_categorias: "doce", title: "Massa Podre para Torta", link: "massa-podre.html", image: "img/massa-podre.png", destaque: false },
     { id: "Brigadeiro", data_categorias: "doce", title: "Brigadeiro", link: "brigadeiro.html", image: "img/brigadeiro.png", destaque: false },
 ]
 
@@ -193,6 +196,5 @@ document.addEventListener('DOMContentLoaded', function () {
             return true; // faz com que o backspace funcione na pagina
         }
     });
-
-    
+   
 });
